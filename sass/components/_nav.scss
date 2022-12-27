@@ -1,0 +1,50 @@
+.nav {
+  @media screen and (min-width: $tabletBP) {
+    @include flex(false, false, center, 87px);
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    @include flex(false, false, center, 92px);
+  }
+}
+
+.nav__list {
+  display: flex;
+  gap: 50px;
+
+  @media screen and (max-width: calc($tabletBP - 1px)) {
+    display: none;
+  }
+}
+
+.nav__link {
+  @include flex(false, false, center, false);
+
+  height: 80px;
+
+  @include font-settings(14px, $primaryTextColor, 500, 1.14, 0.02em);
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  &--current {
+    position: relative;
+    color: $accentColor;
+
+    &::before {
+      @include pseudo(block, absolute);
+      bottom: 0;
+      left: 0;
+
+      height: 4px;
+      width: 100%;
+
+      background-color: $accentColor;
+      border-radius: 2px;
+    }
+  }
+}

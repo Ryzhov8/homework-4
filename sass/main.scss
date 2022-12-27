@@ -1,0 +1,30 @@
+@import './utilities/vars';
+@import './utilities/placeholders';
+@import './utilities/mixins';
+
+@import './base/base';
+@import './base/reset';
+@import './base/visually-hidden';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './components/logo';
+@import './components/nav';
+@import './components/contacts';
+@import './components/hero';
+@import './components/button';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form';
+@import './components/benefits';
+@import './components/activities';
+@import './components/team';
+@import './components/social';
+@import './components/clients';
+@import './components/address';
+@import './components/mail-form';
+@import './components/portfolio';
+@import './components/filter';
+@import './components/card';
+@import './components/mobile-menu';

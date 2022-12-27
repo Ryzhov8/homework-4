@@ -1,0 +1,36 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  @include flex(false, center, center);
+  width: calc((100% - 2 * 30px) / 2);
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  cursor: pointer;
+  @include transition;
+
+  @media screen and (min-width: $tabletBP) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    width: 170px;
+  }
+
+  &:hover {
+    fill: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+}

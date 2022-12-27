@@ -1,0 +1,34 @@
+.hero {
+  max-width: 1600px;
+
+  @include push-auto;
+
+  background-color: #2f303a;
+  background-image: radial-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding: 118px 0px;
+    @include flex(column, false, center);
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @include font-settings(26px, $primaryWhiteColor, 900, 1.62, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (max-width: calc($desktopBP - 1px)) {
+      max-width: 360px;
+    }
+
+    @media screen and (min-width: $desktopBP) {
+      width: 696px;
+
+      @include font-settings(44px, $primaryWhiteColor, 900, 1.36, 0.06em);
+    }
+  }
+}

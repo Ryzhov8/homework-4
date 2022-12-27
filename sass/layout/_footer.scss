@@ -1,0 +1,50 @@
+.footer {
+  background-color: #2f303a;
+}
+
+.footer__container {
+  text-align: center;
+
+  @media screen and (min-width: $tabletBP) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 165px;
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
+    text-align: left;
+  }
+}
+
+.footer__subscripe {
+  @media screen and (max-width: calc($tabletBP - 1px)) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    margin-left: 70px;
+  }
+}
+
+.footer__text {
+  margin-bottom: 20px;
+
+  @include font-settings(14px, $primaryWhiteColor, 700, 1.17, 0.03em);
+  text-transform: uppercase;
+}
+
+.footer__mail {
+  @media screen and (max-width: calc($tabletBP - 1px)) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    margin-left: 93px;
+  }
+}

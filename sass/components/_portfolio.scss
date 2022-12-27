@@ -1,0 +1,16 @@
+.portfolio {
+  margin: 0 auto;
+  padding: 94px 15px;
+
+  @media screen and (max-width: calc($tabletBP - 1px)) {
+    max-width: $mobileBP;
+  }
+
+  @media screen and (min-width: $tabletBP) {
+    width: $tabletBP;
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    width: $desktopBP;
+  }
+}

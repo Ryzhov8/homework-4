@@ -1,0 +1,27 @@
+.address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-top: 20px;
+
+  @media screen and (min-width: $desktopBP) {
+    gap: 9px;
+  }
+}
+
+.address__link {
+  font-style: normal;
+  @include font-settings(14px, $primaryWhiteColor, 400, 1.71, 0.03em);
+  text-decoration: none;
+  @include transition(color);
+
+  &--gray {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}

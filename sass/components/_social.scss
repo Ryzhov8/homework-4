@@ -1,0 +1,33 @@
+.social {
+  @include flex(false, center, center, 10px);
+  @include push-auto;
+}
+
+.social__link {
+  @include flex(false, center, center);
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  fill: #afb1b8;
+  @include transition;
+
+  &:hover {
+    background-color: $accentColor;
+    fill: $primaryWhiteColor;
+  }
+}
+
+.social__link--gray-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $primaryWhiteColor;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accentColor;
+  }
+}

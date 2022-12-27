@@ -1,0 +1,27 @@
+.button {
+  @include flex(false, center, center);
+
+  min-width: 200px;
+  min-height: 50px;
+
+  font-family: 'Roboto', sans-serif;
+  @include font-settings(false, $primaryWhiteColor, 700, 1.88, 0.06em);
+  text-align: center;
+  border-radius: 4px;
+  background-color: $accentColor;
+  cursor: pointer;
+
+  @include transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &--icon {
+    @include flex(false, center, center, 10px);
+    @include push-auto;
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  @include font-settings(24px, $accentColor, 700, 1.17, 0.03em);
+
+  &__part--black {
+    color: #000000;
+  }
+
+  &__part--white {
+    display: inline-block;
+    color: $primaryWhiteColor;
+  }
+}

@@ -1,0 +1,58 @@
+body {
+  padding-top: 60px;
+  margin: 0px;
+  color: $primaryTextColor;
+  background-color: $primaryWhiteColor;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $tabletBP) {
+    padding-top: 80px;
+  }
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+.container {
+  @include push-auto;
+  padding: 60px 15px;
+
+  @media screen and (max-width: calc($tabletBP - 1px)) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $tabletBP) {
+    width: $tabletBP;
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    width: $desktopBP;
+    padding: 94px 15px;
+  }
+}
+
+.section {
+  &__title {
+    margin-bottom: 30px;
+
+    @include font-settings(28px, false, false, 1.17, 0.03em);
+    text-align: center;
+
+    @media screen and (min-width: $desktopBP) {
+      margin-bottom: 50px;
+      @include font-settings(36px, false, false, 1.17, 0.03em);
+    }
+  }
+
+  &--dark-bg {
+    background-color: $secondSectionBgc;
+  }
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

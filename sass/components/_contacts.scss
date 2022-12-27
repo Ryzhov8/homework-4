@@ -1,0 +1,58 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-left: auto;
+
+  @media screen and (max-width: calc($tabletBP - 1px)) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktopBP) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.contacts__link {
+  @include font-settings(14px, $secondaryTextColor, 500, 1.14, 0.02em);
+  text-decoration: none;
+
+  @include transition(color);
+
+  @media screen and (min-width: $desktopBP) {
+    align-items: center;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.contacts__icon {
+  margin-right: 8px;
+
+  fill: $secondaryTextColor;
+  @include transition(fill);
+
+  @media screen and (min-width: $desktopBP) {
+    margin-right: 10px;
+  }
+
+  &--letter {
+    width: 16px;
+    height: 12px;
+  }
+
+  &--phone {
+    width: 10px;
+    height: 16px;
+  }
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: $accentColor;
+  }
+}
