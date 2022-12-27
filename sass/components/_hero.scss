@@ -10,9 +10,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (min-width: $desktopBP) {
+    height: 600px;
+  }
+
   &__container {
     padding: 118px 0px;
     @include flex(column, false, center);
+
+    @media screen and (min-width: $desktopBP) {
+      padding: 200px 0px;
+    }
   }
 
   &__title {
