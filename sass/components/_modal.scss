@@ -16,6 +16,8 @@
     @include position-center;
     max-width: none;
     width: 450px;
+
+    overflow-y: scroll;
   }
 
   @media screen and (min-width: $desktopBP) {

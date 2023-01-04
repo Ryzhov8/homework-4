@@ -196,28 +196,34 @@
           <ul class="section__list activities">
             <li class="activities__item">
               <img
-                src="./images/activity_1.jpg"
+                srcset="./images/activities/img-1.jpg 1x, ./images/activities/img-1_@2x.jpg 2x"
+                src="./images/activities/img-1.jpg"
                 alt="Програміст працює за робочим столом "
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="activities__text">Десктопні додатки</p>
             </li>
             <li class="activities__item">
               <img
-                src="./images/activity_2.jpg"
+                srcset="./images/activities/img-2.jpg 1x, ./images/activities/img-2_@2x.jpg 2x"
+                src="./images/activities/img-2.jpg"
                 alt="Дизайнер розробляє інтерфейс мобільного додатку"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="activities__text">Мобільні додатки</p>
             </li>
             <li class="activities__item">
               <img
-                src="./images/activity_3.jpg"
+                srcset="./images/activities/img-3.jpg 1x, ./images/activities/img-3_@2x.jpg 2x"
+                src="./images/activities/img-3.jpg"
                 alt="Веб-дизайнер обирає колір в графічному планшеті "
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <p class="activities__text">Дизайнерські рішення</p>
             </li>
@@ -231,7 +237,21 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="section__list team">
             <li class="team__item">
-              <img src="./images/team_1.jpg" alt="Фото Ігора Дем'яненко" class="team__photo" />
+              <img
+                srcset="
+                  images/team/img-1_270.jpg 270w,
+                  images/team/img-1_354.jpg 354w,
+                  images/team/img-1_450.jpg 450w,
+                  images/team/img-1_540.jpg 540w,
+                  images/team/img-1_708.jpg 708w,
+                  images/team/img-1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="images/team/img-1_450.jpg"
+                alt="Фото Ігора Дем'яненко"
+                class="team__photo"
+                loading="lazy"
+              />
               <div class="team__label">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -268,7 +288,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team_2.jpg" alt="Фото Ольги Рєпіной" class="team__photo" />
+              <img
+                srcset="
+                  images/team/img-2_270.jpg 270w,
+                  images/team/img-2_354.jpg 354w,
+                  images/team/img-2_450.jpg 450w,
+                  images/team/img-2_540.jpg 540w,
+                  images/team/img-2_708.jpg 708w,
+                  images/team/img-2_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="images/team/img-2_450.jpg"
+                alt="Фото Ольги Рєпіной"
+                class="team__photo"
+                loading="lazy"
+              />
               <div class="team__label">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -305,7 +339,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team_3.jpg" alt="Фото Миколи Тарасова" class="team__photo" />
+              <img
+                srcset="
+                  images/team/img-3_270.jpg 270w,
+                  images/team/img-3_354.jpg 354w,
+                  images/team/img-3_450.jpg 450w,
+                  images/team/img-3_540.jpg 540w,
+                  images/team/img-3_708.jpg 708w,
+                  images/team/img-3_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="images/team/img-3_450.jpg"
+                alt="Фото Миколи Тарасова"
+                class="team__photo"
+                loading="lazy"
+              />
               <div class="team__label">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -342,7 +390,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team_4.jpg" alt="Фото Михайла Єрмакова" class="team__photo" />
+              <img
+                srcset="
+                  images/team/img-4_270.jpg 270w,
+                  images/team/img-4_354.jpg 354w,
+                  images/team/img-4_450.jpg 450w,
+                  images/team/img-4_540.jpg 540w,
+                  images/team/img-4_708.jpg 708w,
+                  images/team/img-4_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="images/team/img-4_450.jpg"
+                alt="Фото Михайла Єрмакова"
+                class="team__photo"
+                loading="lazy"
+              />
               <div class="team__label">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>

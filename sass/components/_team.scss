@@ -29,19 +29,6 @@
   }
 }
 
-.team__photo {
-  width: 100%;
-  height: 460px;
-
-  @media screen and (min-width: $tabletBP) {
-    height: 374px;
-  }
-
-  @media screen and (min-width: $desktopBP) {
-    height: 260px;
-  }
-}
-
 .team__label {
   min-height: 168px;
 

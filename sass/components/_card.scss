@@ -29,19 +29,6 @@
   }
 }
 
-.card__img {
-  width: 100%;
-
-  @media screen and (max-width: calc($tabletBP - 1px)) {
-    max-width: 450px;
-    max-height: 294px;
-  }
-
-  @media screen and (min-width: $tabletBP) {
-    height: 294px;
-  }
-}
-
 .card__thumb {
   position: relative;
   overflow: hidden;
@@ -52,14 +39,22 @@
   top: 0px;
   left: 0px;
 
-  padding: 77px 24px;
+  display: flex;
+  align-items: center;
 
+  height: 100%;
+  padding: 0px 24px;
+  overflow-y: scroll;
   @include font-settings(18px, $primaryWhiteColor, false, 1.56);
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
 
   @include transition(transform);
+
+  @media screen and (min-width: $desktopBP) {
+    overflow-y: auto;
+  }
 
   .card:hover &,
   .card__link:focus & {
@@ -68,7 +63,7 @@
 }
 
 .card__label {
-  height: 110px;
+  min-height: 110px;
 
   padding: 20px 24px;
   border-top: none;
@@ -76,8 +71,8 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 
-  @media screen and (min-width: $tabletBP) {
-    height: 146px;
+  @media screen and (min-width: $tabletBP) and (max-width: calc($desktopBP - 1px)) {
+    min-height: 146px;
   }
 }
 
